@@ -1,0 +1,154 @@
+type: collection.insomnia.rest/5.0
+name: kotlin-ktor-simple-studies
+meta:
+  id: wrk_56bf8b20b5c24d248ad9a70630285293
+  created: 1753110407860
+  modified: 1753128214329
+  description: ""
+collection:
+  - name: User
+    meta:
+      id: fld_2b4fbb1c76c148469e0a6f144346f44b
+      created: 1753114016989
+      modified: 1753114016989
+      sortKey: -1753114016989
+      description: ""
+    children:
+      - url: "{{ _._dev.api.base_url }}/users"
+        name: GET Users
+        meta:
+          id: req_efb1cd37b406440591ff5a100f8cb20f
+          created: 1753111269840
+          modified: 1753114027727
+          isPrivate: false
+          description: ""
+          sortKey: -1753114022626
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.3.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _._dev.api.base_url }}/users/05b8427d-f377-4514-afc3-ae2db36b07c0"
+        name: GET User by ID
+        meta:
+          id: req_de5939a93a7c40c1ac4745dfc7c88933
+          created: 1753111347231
+          modified: 1753124575546
+          isPrivate: false
+          description: ""
+          sortKey: -1753114022576
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.3.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _._dev.api.base_url }}/users"
+        name: POST Users
+        meta:
+          id: req_1c9286bc24f84f33aab5b1c6615ba555
+          created: 1753111389411
+          modified: 1753114033293
+          isPrivate: false
+          description: ""
+          sortKey: -1753114022726
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Felippe Neves",
+            	"email": "felippeneves@gmail.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_4cf873c88f3b4048b76daab5e25209c7
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _._dev.api.base_url }}/users/05b8427d-f377-4514-afc3-ae2db36b07c0"
+        name: PUT Users
+        meta:
+          id: req_fe314243734e4f0e97284b66b0830294
+          created: 1753113937987
+          modified: 1753124589500
+          isPrivate: false
+          description: ""
+          sortKey: -1753114022526
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Felippe Neves Monteiro",
+            	"email": "felippenevesm@gmail.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_4cf873c88f3b4048b76daab5e25209c7
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _._dev.api.base_url }}/users/05b8427d-f377-4514-afc3-ae2db36b07c0"
+        name: DELETE User by ID
+        meta:
+          id: req_956f8ea96d4f42ca84bd76e692682e09
+          created: 1753113968951
+          modified: 1753124627271
+          isPrivate: false
+          description: ""
+          sortKey: -1753114022426
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.3.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_806e2342514bd338f51b91b37e04fef8f52ff218
+    created: 1753110407873
+    modified: 1753110407873
+environments:
+  name: Base Environment
+  meta:
+    id: env_806e2342514bd338f51b91b37e04fef8f52ff218
+    created: 1753110407864
+    modified: 1753111303638
+    isPrivate: false
+  data:
+    _dev:
+      api:
+        base_url: http://0.0.0.0:8080
